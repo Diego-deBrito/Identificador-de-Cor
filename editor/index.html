@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector de Cores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Detector de Cores</h1>
+
+        <!-- Upload de imagem ou PDF -->
+        <input type="file" id="upload-doc" accept="image/*,application/pdf">
+        
+        <!-- Canvas para renderizar a imagem ou PDF -->
+        <canvas id="doc-canvas" style="display: none;"></canvas>
+
+        <!-- Botão para detectar cores -->
+        <button id="detect-colors">Detectar Cores</button>
+
+        <!-- Resultados das cores -->
+        <div id="color-results">
+            <h2>Cores Detectadas</h2>
+            <div id="color-list"></div>
+        </div>
+    </div>
+
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
